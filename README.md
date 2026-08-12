@@ -1,0 +1,1 @@
+Amazon DynamoDB 스터디 내용을 기록하는 repo입니다.
