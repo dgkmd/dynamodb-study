@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="250" viewBox="0 0 680 250" role="img" aria-label="단계 3: 메타데이터 룩업">
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif; }
+    .th { font-size: 14px; font-weight: 500; }
+    .ts { font-size: 12px; }
+    .cap { fill: #73726c; }
+    .g-fill { fill: #F1EFE8; stroke: #5F5E5A; } .g-t { fill: #2C2C2A; }
+    .te-fill { fill: #E1F5EE; stroke: #0F6E56; } .te-t { fill: #085041; }
+    .p-fill { fill: #EEEDFE; stroke: #534AB7; } .p-t { fill: #26215C; }
+    @media (prefers-color-scheme: dark) { .cap { fill: #a3a29b; } }
+  </style>
+  <text class="ts cap" x="60" y="34">해시 구간 → 파티션 → 리더 노드</text>
+  <rect class="g-fill" x="40" y="46" width="600" height="40" rx="6" stroke-width="0.5"/>
+  <text class="ts g-t" x="60" y="66" dominant-baseline="central">0x00... ~ 0x4F...</text>
+  <text class="ts g-t" x="300" y="66" dominant-baseline="central">Partition-A</text>
+  <text class="ts g-t" x="470" y="66" dominant-baseline="central">Node-12</text>
+  <rect class="te-fill" x="40" y="92" width="600" height="44" rx="6" stroke-width="1.5"/>
+  <text class="th te-t" x="60" y="114" dominant-baseline="central">0x50... ~ 0x9F...  ← 0x9F 여기</text>
+  <text class="th te-t" x="380" y="114" dominant-baseline="central">Partition-B</text>
+  <text class="th te-t" x="490" y="114" dominant-baseline="central">Node-05</text>
+  <rect class="g-fill" x="40" y="142" width="600" height="40" rx="6" stroke-width="0.5"/>
+  <text class="ts g-t" x="60" y="162" dominant-baseline="central">0xA0... ~ 0xFF...</text>
+  <text class="ts g-t" x="300" y="162" dominant-baseline="central">Partition-C</text>
+  <text class="ts g-t" x="470" y="162" dominant-baseline="central">Node-08</text>
+  <rect class="p-fill" x="40" y="198" width="200" height="40" rx="8" stroke-width="0.5"/>
+  <text class="ts p-t" x="140" y="218" text-anchor="middle" dominant-baseline="central">라우터 로컬 캐시 참조</text>
+</svg>

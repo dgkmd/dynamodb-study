@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="200" viewBox="0 0 680 200" role="img" aria-label="단계 1: 요청 도착">
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif; }
+    .th { font-size: 14px; font-weight: 500; }
+    .ts { font-size: 12px; }
+    .arr { stroke: #888780; stroke-width: 1.5; fill: none; }
+    .g-fill { fill: #F1EFE8; stroke: #5F5E5A; } .g-t { fill: #2C2C2A; }
+    .b-fill { fill: #E6F1FB; stroke: #185FA5; } .b-t { fill: #0C447C; }
+    .p-fill { fill: #EEEDFE; stroke: #534AB7; } .p-t { fill: #26215C; }
+    @media (prefers-color-scheme: dark) {
+      .arr { stroke: #9c9a92; }
+    }
+  </style>
+  <defs><marker id="a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+  <rect class="g-fill" x="40" y="76" width="120" height="48" rx="8" stroke-width="0.5"/>
+  <text class="th g-t" x="100" y="96" text-anchor="middle" dominant-baseline="central">클라이언트</text>
+  <text class="ts g-t" x="100" y="112" text-anchor="middle" dominant-baseline="central">GetItem(alice)</text>
+  <line x1="160" y1="100" x2="222" y2="100" class="arr" marker-end="url(#a1)"/>
+  <rect class="b-fill" x="230" y="76" width="120" height="48" rx="8" stroke-width="0.5"/>
+  <text class="th b-t" x="290" y="100" text-anchor="middle" dominant-baseline="central">로드밸런서</text>
+  <line x1="350" y1="100" x2="412" y2="100" class="arr" marker-end="url(#a1)"/>
+  <rect class="p-fill" x="420" y="40" width="150" height="40" rx="8" stroke-width="0.5"/>
+  <text class="th p-t" x="495" y="60" text-anchor="middle" dominant-baseline="central">Router-1</text>
+  <rect class="p-fill" x="420" y="88" width="150" height="40" rx="8" stroke-width="1.5"/>
+  <text class="th p-t" x="495" y="108" text-anchor="middle" dominant-baseline="central">Router-7 ← 담당</text>
+  <rect class="p-fill" x="420" y="136" width="150" height="40" rx="8" stroke-width="0.5"/>
+  <text class="th p-t" x="495" y="156" text-anchor="middle" dominant-baseline="central">Router-N</text>
+</svg>
