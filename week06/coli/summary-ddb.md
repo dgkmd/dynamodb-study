@@ -25,9 +25,9 @@
 - ex) E-commerce
   - 한 소비자가 여러 이메일 주소 소유 가능
   - RDB는 다음과 같이 customers, addresses를 각각 다른 테이블로 모델링 할 것
-  - ![img.png](img.png)
+  - ![img.png](img/img.png)
   - DDB는 Mailing Addresses라는 list 속성을 만들어 품을 수 있음
-  - ![img_1.png](img_1.png)
+  - ![img_1.png](img/img_1.png)
 
   
 - Complex Attribute를 사용하는 두가지 질문
@@ -49,10 +49,10 @@
 
 ### RDB에서의 접근 : Authors, Books 테이블
 - 작가가 쓴 책들을 가져오려면 Join 필요
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
 ### DDB에서의 접근 : PK(AuthorName) + SK(BookName), Attribute(작가, 책에 대한 정보), 
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 
 - 작가에 대한 생애 정보가 작가가 쓴 책만큼 중복되어 저장됨
 - 중복되어 저장되는 생애 정보는 변경여지가 크게 없으므로 가능
@@ -71,7 +71,7 @@
 ex)
 - SaaS 서비스 구독 기관과 그 기관에 속하는 User를 SK(METADATA, USER)를 통해 구분
 
-![img_4.png](img_4.png)
+![img_4.png](img/img_4.png)
 
 - 초록 부분 : org item type
 - 파랑 부분 : user item type
@@ -87,7 +87,7 @@ ex)
 
 ex) Zendisk -> 하나의 기관의 유저 여러명있고 -> 하나의 유저가 여러개의 ticket 사용 가능
 - 기존 Composite Key를 이용하면 SK를 METADATA, USER, USER#Ticket을 통해 org, user, ticket을 함께 조회 가능
-![img_5.png](img_5.png)
+![img_5.png](img/img_5.png)
 
 - 문제점 : 나의 메인 접근 패턴을 이 설계를 통해 영향 받을 수 있음
   - 기관 + Users를 조회하려고 하는데 Tickets들도 이제 함께 조회됨
@@ -137,7 +137,7 @@ ex) Zendisk -> 하나의 기관의 유저 여러명있고 -> 하나의 유저가
 ## Composite Sort Key를 통해 가능
 - Sort Key : STATE#CITY#ZIP
 - 계층적으로 begins_with을 먹이면서 원하는 depth로 검색 가능
-- ![img_6.png](img_6.png)
+- ![img_6.png](img/img_6.png)
 
 ## Composite State Key가 어울리는 케이스
 - 2개 이상의 계층 레벨을 가지고 각 레벨별 다양한 접근 패턴이 필요하게 될 때
